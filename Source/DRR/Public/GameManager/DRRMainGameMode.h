@@ -22,7 +22,10 @@ public:
 	FORCEINLINE UUserWidget* GetMainHUDWidget() { return MainHUDWidget; }
 
 protected:
+	UPROPERTY()
 	TSubclassOf<UUserWidget> MainHUDWidgetClass;
+
+	UPROPERTY()
 	UUserWidget* MainHUDWidget;
 
 private:
